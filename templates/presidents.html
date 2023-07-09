@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <button id="start" onclick="ajaxPresident()">Start!</button>
+    <div class="questions">
+        <h2 class="question-header">Who is the President ?</h2>
+        <div class="answers">
+                <button class="ans" id="0" name value="unclicked">Choose</button>
+                <button class="ans" id="1" name value="unclicked">One</button>
+                <button class="ans" id="2" name value="unclicked">From</button>
+                <button class="ans" id="3" name value="unclicked">These Options</button>
+        </div>
+    </div>
+    <div class="footer">
+        <button id="next" class="bradjusted" onclick="ajaxPresident()">
+            Next!
+        </button>
+    </div>
+{% endblock %}

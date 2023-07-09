@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <script src="../static/jquery.min.js"></script>
+        <script src="../static/script.js"></script>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div class="upper">
+            <h1>Test Your Knowledge</h1>
+            <p>Score!</p><span><p id='score'>0</p></span>
+
+            <button class="bradjusted" onclick="window.location.href='/presidents'">World Leaders</button>
+        </div>
+    {% block body %}{% endblock %}
+    </body>
+    
+</html>
