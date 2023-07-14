@@ -1,62 +1,212 @@
-body {
-    background-color: rgb(173, 216, 230);
-}
 *, *::before, *::after {box-sizing: inherit;}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Tahoma, Sans-serif;
+}
 
 html {
     box-sizing: border-box;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
 .upper {
+    position: relative;
     display: flex;
     height: 100px;
-    position: relative;
-    background-color: #ff6666;
-    width: 100%;
-    margin-top: -6.5px;
+    width: 95%;
+    background-color: #aa872f;
+    border: 3px #472d2d solid;
+    border-radius:3px;
+    align-items: center;
+    justify-content:center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+.menu {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bradjusted {
-    position: absolute;
-    padding: 5px;
-    bottom: 0;
-    left: 0;    
-    background-color: blueviolet;
-    color: white;
-    font-size: 15px;
+h1 {    
+    display: inline-block;
+    margin: auto;
+    font-weight: 500;
+    color: #472d2d
+}
+#png {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border: none;
+    mix-blend-mode: screen;
+}
+
+.welcome-text {
+    position: relative;
+
 }
 .one {
     left: 20%
 }
-h1, h2 {
-    margin: auto;
-    font-weight: 500;
-    font-family: Tahoma, Sans-serif;
-    color: black;
-    font-style: italic;
-}
-.questions {
-    width: 100%;
-    height: 500px;
-    margin-top: 25px
 
+/* CSS for middle section of the index page */
+
+.middle {
+    height: 80%;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.mid-container-one, .mid-container-two, .mid-container-three {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    /*background-color:  #aa872f;*/
+    flex-direction: column;
+    border: 2px solid #aa872f;
+}
+
+.section-header {
+    text-align: center;
+    border-bottom: 1px solid #aa872f;
+    font-style: oblique;
+}
+
+.top {
+    flex: 1;
+}
+    .mid {
+        flex: 3;
+        margin-top: 10px;
+    }
+
+.top {
+    margin: 10px 5px 5px 5px;
+}
+.foot {
+    flex: 1;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+#button {
+    border: 1px solid rgb(255, 251, 251);
+    background-color: #322d1e;
+    color: #e8d6c2;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#button:hover {
+    color: #807878;
+}
+
+p {
+    text-align: center;
+}
+
+.section-image {
+    height: 400px;
+    width: 350px;
+    border-radius: 10%;
+}
+
+.box {
+    display: flex;
+    height: 80px;
+    width: 70%;
+    border-radius:3px;
+    justify-content:center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+.question-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+    background-color: #fff;
+    color: rgb(36, 33, 33);
+    border-radius: 10px;
+}
+ol {
+    margin: 15px;
+}
+
+/*CSS for answers box*/
+
 .answers {
+    display: flex;
+    height: 400px;
     width: 100%;
-    height: 100px;
-    border: 1px none black;
-    color: black;
-    border-radius: 30px;
-    margin-top: 10px 
+    border-radius:3px;
+    justify-content:center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.flex1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ans{
-    background-color: #ff6666;
-    border-radius: 20px;
-    font-size: 40px;
-    padding: 20px 20px;
-    color: black;
-    width: 100%;
+.ans-button {
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
 }
+
+.footer {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+body{
+    background-color: #b3b0b0;
+}
+
+
 
 

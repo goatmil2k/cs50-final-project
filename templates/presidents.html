@@ -1,22 +1,41 @@
 {% extends 'layout.html' %}
 
 {% block head %}
+<title>Test your knowledge</title>
 {% endblock %}
-
+ 
 {% block body %}
-    <button id="start" onclick="ajaxPresident()">Start!</button>
-    <div class="questions">
-        <h2 class="question-header">Who is the President ?</h2>
+   <div class="center">
+        <div class="box">
+            <div class="question-box">
+                <h4 class="question">What do you think?</h4>
+            </div>
+        </div>
+   </div>
+   <div class="center">
         <div class="answers">
-                <button class="ans" id="0" name value="unclicked">Choose</button>
-                <button class="ans" id="1" name value="unclicked">One</button>
-                <button class="ans" id="2" name value="unclicked">From</button>
-                <button class="ans" id="3" name value="unclicked">These Options</button>
+            <div class="flex1">
+                <button class="ans-button" id="ans-button" value="unclicked" name>Answer</button>
+            </div>
+            <div class="flex1">
+                <button class="ans-button" id="ans-button" value="unclicked" name>Answer</button>
+            </div>
+            <div class="flex1">
+                <button class="ans-button" id="ans-button" value="unclicked" name>Answer</button>
+            </div>
+            <div class="flex1">
+                <button class="ans-button" id="ans-button" value="unclicked" name>Answer</button>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <button id="next" class="bradjusted" onclick="ajaxPresident()">
-            Next!
-        </button>
+    <div class="center"> 
+        <div class="footer">
+            
+            <button class="quit-button" id="button">Quit!</button>
+        </div>
+        <div class="footer">
+            <button class="next-button" id="button">Next!</button>
+        </div>
     </div>
+        
 {% endblock %}

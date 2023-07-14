@@ -5,6 +5,42 @@
 {% endblock %}
 
 {% block body %}
-<div class="score">
+<div class="center">
+    <div class="box">
+        <ol class="info-box">
+            <li>Choose from 4 options for every question</li>
+            <li>Get a point for every right answer</li>
+            <li>You may skip a question without answering</li>
+        </ol>
+    </div>
 </div>
+<div class="container center">
+    <div class="middle">
+        <div class="mid-container-one">
+            <div class="container-section one">
+                <section class="top">
+                        <h4 class="section-header">World Leaders</h4>
+                        <p>Test your knowledge about world leaders</p>
+                </section>
+                <section class="mid">
+                   <img class="section-image" src="../static/world_leaders.img">
+                </section>
+                <section class="foot"><button onclick="window.location.href='/presidents'" id="button">Let's Go!</button></section>
+            </div>
+        </div>
+        <div class="mid-container-two">
+            <div class="container-section two">
+                <section class="top">
+                    <h4 class="section-header">Capital Cities</h4>
+                    <p>Test your knowledge about cities of the world</p>
+                </section>
+                <section class="mid">
+                    <img class="section-image" src="../static/yangon.img">
+                </section>
+                <section class="foot"><button id="button">Let's Go!</button></section>
+            </div>
+        </div>
+    </div>
+</div>
+
 {%  endblock %}

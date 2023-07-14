@@ -2,16 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Krishna">
         <script src="../static/jquery.min.js"></script>
         <script src="../static/script.js"></script>
         {% block head %}{% endblock %}
     </head>
     <body>
-        <div class="upper">
-            <h1>Test Your Knowledge</h1>
-            <p>Score!</p><span><p id='score'>0</p></span>
-
-            <button class="bradjusted" onclick="window.location.href='/presidents'">World Leaders</button>
+        <div class="upper-main center">
+            <div class="upper">
+                <div class="welcome-text">
+                     <h1>Test Your Knowledge</h1><img id="png" src="../static/brainicon.png" alt="brinicon">
+                </div>
+                <div class="menu">
+                    <button onclick="window.location.href='/'" class="button" id="button">Main Menu</button>
+                </div>
+            </div>
         </div>
     {% block body %}{% endblock %}
     </body>

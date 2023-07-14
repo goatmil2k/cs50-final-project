@@ -9,9 +9,9 @@ CREATE TABLE presidents (
 
 --Create a table for capital cities around the world by country
 
-CREATE TABLE country (
+CREATE TABLE capitals (
     id INTEGER PRIMARY KEY,
     country TEXT NOT NULL,
-    city TEXT NOT NULL
+    city TEXT NOT NULL,
     continent TEXT NOT NULL
 );
