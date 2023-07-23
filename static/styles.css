@@ -17,6 +17,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;  
+    flex-wrap: wrap;
 }
 .upper {
     position: relative;
@@ -85,14 +86,16 @@ h1 {
     display: flex;
     justify-content: center;
 }
-
+.container {
+    margin: 20px auto 20px 9vw;
+    width: 100%;
+}
 .container-section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
     height: 100%;
-    /*background-color:  #aa872f;*/
     flex-direction: column;
     border: 2px solid #aa872f;
 }
@@ -106,10 +109,10 @@ h1 {
 .top {
     flex: 1;
 }
-    .mid {
-        flex: 3;
-        margin-top: 10px;
-    }
+.mid {
+    flex: 3;
+    margin-top: 10px;
+}
 
 .top {
     margin: 10px 5px 5px 5px;
@@ -120,7 +123,7 @@ h1 {
     justify-content: center;
 }
 
-#button {
+.button {
     border: 1px solid rgb(255, 251, 251);
     background-color: #322d1e;
     color: #e8d6c2;
@@ -130,17 +133,13 @@ h1 {
     width: 100px;
 }
 
-#button:hover {
-    color: #807878;
-}
-
 p {
     text-align: center;
 }
 
 .section-image {
     height: 400px;
-    width: 350px;
+    width: max(350px, 25vw);
     border-radius: 10%;
 }
 
@@ -150,9 +149,7 @@ p {
     width: 70%;
     border-radius:3px;
     justify-content:center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
+    margin: 10px auto 10px auto;
     flex-wrap: wrap;
 }
 .question-box {
@@ -207,6 +204,67 @@ body{
     background-color: #b3b0b0;
 }
 
+.score-board {
+    display: block;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score {
+    margin-left: 3em;
+}
+
+.summary {
+    font-weight: 200;
+    font-size: 50px;
+    color:rgb(48, 60, 60);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 600px;
+    margin: 20px auto 10px auto;
+    border: 1px solid #472d2d;
+    padding: 10px;
+    flex-wrap: wrap;
+}
 
 
+.columnchid {
+    width: 600px;
+    width: 500px;
+}
+.width-200 {
+    width: 100%;
+}
 
+.play-again{
+    margin-top: 50px;
+}
+
+#notify {
+    padding-top: 5px;
+    margin-bottom: -10px;
+}
+
+.hoverchange:hover {
+    background-color: #e8d6c2;
+    color: #472d2d;
+    border-color: #472d2d;
+}
+
+.summary {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}

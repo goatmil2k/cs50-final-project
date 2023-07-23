@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Summary</title>
+{% endblock %}
+
+{% block body %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var received = localStorage.getItem("send");
+    var object = JSON.parse(received);
+    var uno = object.answer;
+    var dos = object.score;
+    var tres = object.accuracy;
+    document.querySelector('#qanswered').innerHTML = object.answer;
+    document.getElementById('correctAnswers').innerHTML = object.score;
+    document.getElementById('accuracy').innerHTML = object.accuracy + "%";
+    document.getElementById('score-banner').innerHTML = object.score;
+   })
+</script>
+<div class="column">
+    <h2 class='summary'>Questions Answered<span class='summary numbers' id='qanswered'></span></h2>
+    <h2 class="summary">Correct Answers<span class='summary numbers' id='correctAnswers'></span></h2>
+    <h2 class="summary">Accuracy<span class='summary numbers' id='accuracy'></span></h2>
+</div>
+ <div class='center width-200'>
+    <button class="play-again button hoverchange" id="play-again" onclick="history.back()">Play Again!
+    </button>
+</div>
+{% endblock %}
+  

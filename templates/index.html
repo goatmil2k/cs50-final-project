@@ -5,16 +5,14 @@
 {% endblock %}
 
 {% block body %}
-<div class="center">
-    <div class="box">
-        <ol class="info-box">
-            <li>Choose from 4 options for every question</li>
-            <li>Get a point for every right answer</li>
-            <li>You may skip a question without answering</li>
-        </ol>
-    </div>
+<div class="box">
+    <ol class="info-box">
+        <li>Choose from 4 options for every question</li>
+        <li>Get a point for every right answer</li>
+        <li>You may skip the questions without answering</li>
+    </ol>
 </div>
-<div class="container center">
+<div class="container">
     <div class="middle">
         <div class="mid-container-one">
             <div class="container-section one">
@@ -25,7 +23,7 @@
                 <section class="mid">
                    <img class="section-image" src="../static/world_leaders.img">
                 </section>
-                <section class="foot"><button onclick="window.location.href='/presidents'" id="button">Let's Go!</button></section>
+                <section class="foot"><a href="/presidents"><button onclick="ajaxRequest()" value='1' class="go-button ajaxrequest button hoverchange">Let's Go!</button></a></section>
             </div>
         </div>
         <div class="mid-container-two">
@@ -37,7 +35,7 @@
                 <section class="mid">
                     <img class="section-image" src="../static/yangon.img">
                 </section>
-                <section class="foot"><button id="button">Let's Go!</button></section>
+                <section class="foot"><a href="/cities"><button onclick="ajaxRequest()" value='2' class="ajaxrequest button hoverchange">Let's Go!</button></a></section>
             </div>
         </div>
     </div>

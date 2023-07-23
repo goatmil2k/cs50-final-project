@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>TYK cities</title>
+{% endblock %}
+
+{% block body%}
+<div class="center">
+    <div class="box">
+        <div class="question-box">
+            <h4 class="question"></h4>
+        </div>
+    </div>
+</div>
+<div class="center">
+    <p id="notify"></p>
+</div>
+<div class="center">
+    <div class="answers">
+        <div class="flex1">
+            <button class="ans-button" id="0" value="unclicked" name>Answer</button>
+        </div>
+        <div class="flex1">
+            <button class="ans-button" id="1" value="unclicked" name>Answer</button>
+        </div>
+        <div class="flex1">
+            <button class="ans-button" id="2" value="unclicked" name>Answer</button>
+        </div>
+        <div class="flex1">
+            <button class="ans-button" id="3" value="unclicked" name>Answer</button>
+        </div>
+    </div>
+</div>
+<div class="center"> 
+    <div class="footer">
+        <a href='/quit'><button onclick='quitSummary(this)' class="quit-button button hoverchange" id='quit-city'>Quit!</button></a>
+    </div>
+    <div class="footer">
+        <button value='2' class="next-button ajaxrequest button hoverchange" onclick="ajaxRequest()">Next!</button>
+    </div>
+</div>
+{% endblock%}
