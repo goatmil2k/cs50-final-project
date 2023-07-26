@@ -5,8 +5,7 @@ import random
 db = SQL("sqlite:///final.db")
 
 app = Flask(__name__, static_folder='static')
-app.debug = False  # Enable debug mode
-app.host = '0.0.0.0'
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
