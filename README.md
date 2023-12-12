@@ -5,7 +5,7 @@ Test your knowledge.com is a simple web application for answering trivia questio
 
 Right now there are two types of trivias you can anwswer, presidents and capital cities. All the names of the leaders of each country and capital cities of each country is stored inside sql database, namely final.db for two reasons. It is easily accessible for backend requests and can be quickly updated if there is a change in any of the names.
 
-If you want to try out the website, you can simply click the link provided. There is no prerequisites required. [Link to the website]().
+If you want to try out the website, you can simply click the link provided. There is no prerequisites required. [https://goatmil2k.pythonanywhere.com/]().
 
 **app.py:**
  All the backend requests are made in this file. Those request include ``render_template()``and ``jsonify()``. ``jsonify`` is used for making ajax request from script.js file which is crucial for this website.
